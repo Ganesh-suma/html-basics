@@ -45,6 +45,34 @@ The Extensible Hypertext Markup Language, or XHTML, has two important notes for 
 
 1) It needs to be well formed, meaning all elements need to be closed and nested correctly or you will return errors.
 2) Since it is more strict than HTML is requires less pre-processing by the browser, which may improve your sites performance.
+---
+
+### ❌ Why XHTML failed to become the norm?
+
+- **Too Strict**: A single missing tag or unescaped character would break the entire page.
+- **Poor Error Recovery**: XML doesn't allow graceful fallback like HTML.
+- **Developer Experience**: Developers found it hard to maintain.
+- **Browser Behavior**: Browsers treated XHTML with `text/html` as normal HTML, defeating the purpose.
+- **HTML5 Emerged**: When HTML5 came in (2008–2014), it combined:
+  - Rich features (audio, video, canvas, etc.)
+  - Simpler doctype, forgiving syntax
+  - Better suited to modern web needs
+
+### ✅ Why HTML5 dominates now?
+
+- More Flexible and Developer-Friendly  
+- Works even if the markup isn't perfect  
+- Supports modern APIs (Web Storage, Media, WebSockets)  
+- Backed by all major browsers  
+- Encourages semantic elements (`<section>`, `<article>`, etc.)
+
+### 📌 So is XHTML dead?
+
+Not totally, but:
+
+- It's niche now — mostly used where XML interoperability is needed (like some enterprise apps or eBooks).
+- Most web developers today use HTML5 due to its power, simplicity, and resilience.
+   
 
 <div align="right">
     <b><a href="#table-of-contents">↥ back to top</a></b>
