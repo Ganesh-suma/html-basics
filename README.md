@@ -237,22 +237,7 @@ The **DOCTYPE declaration** at the top of the HTML document tells the browser wh
 | **Standards Mode** | Follows official W3C standards strictly (modern rendering). |
 | **Almost Standards Mode** | Like standards mode, but allows quirks in table/image layout for compatibility. |
 
----
 
- ✅ Example:
-```html
-<!-- Quirks Mode: No doctype -->
-<html>
-  <head><title>Old Page</title></head>
-  <body>...</body>
-</html>
-
-<!-- Standards Mode: Recommended -->
-<!DOCTYPE html>
-<html>
-  <head><title>Modern Page</title></head>
-  <body>...</body>
-</html>
 
 
 ## Q. What happens when DOCTYPE is not given?
