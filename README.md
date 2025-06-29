@@ -199,11 +199,61 @@ Semantic search = Smarter results, better intent matching, and more natural huma
 
 A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines how documents of a certain type should be structured (i.e. a `button` can contain a `span` but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. 
 
-Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` matching this DOCTYPE forreading the document. If a user agent doesn't recognize a correct DOCTYPE, it will trigger the `quirks mode`.
+Once a user agent has recognized a correct DOCTYPE, it will trigger the `**no-quirks mode**` matching this DOCTYPE for reading the document. If a user agent doesn't recognize a correct DOCTYPE, it will trigger the `quirks mode`.
 
 <div align="right">
     <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
+
+## ❓ What is Quirks Mode in HTML/CSS?
+
+**Quirks Mode** is a compatibility mode used by browsers to **emulate old, non-standard behavior** for outdated websites that were built before modern web standards were adopted.
+
+---
+
+# 🧠 Why Does Quirks Mode Exist?
+In early web development days (pre-HTML4/XHTML), developers wrote pages relying on browser-specific bugs and inconsistent rendering. When modern standards (like CSS2/HTML5) came in, many old websites **broke**.
+
+So, browsers introduced **Quirks Mode** to maintain backward compatibility and ensure legacy websites still work.
+
+---
+
+# ⚙️ How Browsers Decide Mode
+The **DOCTYPE declaration** at the top of the HTML document tells the browser which rendering mode to use:
+
+| DOCTYPE | Rendering Mode |
+|---------|----------------|
+| Correct HTML5 doctype (`<!DOCTYPE html>`) | **Standards Mode** |
+| Missing/incorrect doctype or old HTML 3.2 | **Quirks Mode** |
+| Some older doctypes (transitional) | **Almost Standards Mode** |
+
+---
+
+# 📦 Three Rendering Modes
+
+| Mode | Description |
+|------|-------------|
+| **Quirks Mode** | Emulates old browser behavior with bugs and inconsistencies. |
+| **Standards Mode** | Follows official W3C standards strictly (modern rendering). |
+| **Almost Standards Mode** | Like standards mode, but allows quirks in table/image layout for compatibility. |
+
+---
+
+ ✅ Example:
+```html
+<!-- Quirks Mode: No doctype -->
+<html>
+  <head><title>Old Page</title></head>
+  <body>...</body>
+</html>
+
+<!-- Standards Mode: Recommended -->
+<!DOCTYPE html>
+<html>
+  <head><title>Modern Page</title></head>
+  <body>...</body>
+</html>
+
 
 ## Q. What happens when DOCTYPE is not given?
 
