@@ -99,19 +99,20 @@ HTML5 semantic tags define the function and the category of your text, simplifyi
 
 HTML5 offers new semantic elements to define different parts of a web page:
 
-* `<article>`
-* `<aside>`
-* `<details>`
-* `<figcaption>`
-* `<figure>`
-* `<footer>`
-* `<header>`
-* `<main>`
-* `<mark>`
-* `<nav>`
-* `<section>`
-* `<summary>`
-* `<time>`
+- `<header>` – Represents the introductory content or navigation.
+- `<footer>` – Represents the footer for a section or page.
+- `<main>` – Represents the main content area of the page.
+- `<section>` – Groups related content under a thematic section.
+- `<article>` – Represents independent, self-contained content like blogs or news articles.
+- `<aside>` – Contains tangential or side content such as ads or tips.
+- `<nav>` – Represents a section with navigation links.
+  - `<figure>` – Wraps self-contained content like images, diagrams, or charts.
+- `<figcaption>` – Provides a caption or description for the content in `<figure>`.
+  - `<details>` – Defines a collapsible section that can be expanded or hidden.
+- `<summary>` – Specifies a summary, visible heading for the `<details>` element.
+  - `<time>` – Represents dates, times, or durations in a machine-readable format.
+- `<mark>` – Highlights or marks text for reference or emphasis (e.g., search result).
+
 
 **Syntax:**
 
