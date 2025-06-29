@@ -158,6 +158,43 @@ HTML5 offers new semantic elements to define different parts of a web page:
     <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
+## 🔍 How Search Engines Use Semantics Internally
+
+Semantic search allows search engines to go beyond keyword matching and understand the **intent** and **context** behind a user's query. Here's how it works under the hood:
+
+ 🧠 Why Use Semantics?
+- To improve result accuracy by interpreting natural language.
+- To match queries with related terms and concepts (e.g., synonyms, entity relationships).
+- To surface more relevant content even if exact keywords don’t match.
+
+# ⚙️ Internal Workflow of Semantic Search
+
+| Layer | Description |
+|-------|-------------|
+| **1. NLP (Natural Language Processing)** | Breaks down the query into parts (e.g., tokens, POS tags, named entities). |
+| **2. Knowledge Graph** | Connects real-world entities and their relationships (e.g., "Sachin Tendulkar" → "cricketer"). |
+| **3. Latent Semantic Indexing (LSI)** | Understands context and associations between related words. |
+| **4. Transformer Models (BERT, MUM)** | Understands full query meaning including tone, prepositions, and context. |
+| **5. Structured Data / Semantic Tags** | Semantic HTML (`<article>`, `<section>`, etc.) and Schema.org markup help engines categorize content. |
+| **6. Intent Mapping** | Predicts user intent (e.g., informational, navigational, transactional). |
+| **7. Contextual Ranking** | Ranks results based on semantic relevance, user location, search history, and more. |
+
+# ✅ Example:
+**Query:** `Best place to eat biryani near me`
+
+**Semantic Breakdown:**
+- `"place"` → restaurant
+- `"eat"` → action, food
+- `"biryani"` → dish
+- `"near me"` → geolocation context
+
+Search engines may return a list of **nearby biryani-serving restaurants** instead of pages matching the literal words.
+
+---
+
+Semantic search = Smarter results, better intent matching, and more natural human-computer interaction.
+
+
 ## Q. What does a `<DOCTYPE html>` do?
 
 A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines how documents of a certain type should be structured (i.e. a `button` can contain a `span` but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. 
